@@ -18,8 +18,8 @@ passport.deserializeUser((user, done) => {
 passport.use(
     new GoogleStrategy({
     callbackURL: 'http://localhost:3000/auth/google/redirect',
-    clientID : keys.google.clientID,
-    clientSecret: keys.google.clientSecret
+    clientID : process.env.googleClientID,
+    clientSecret: process.env.googleClientSecret,
 }, async (accessToken, refreshToken, profile, done) => {
     console.log('authentication worked')
     console.log(profile)
@@ -51,8 +51,8 @@ passport.use(
 passport.use(
     new GithubStrategy({
     callbackURL: 'http://localhost:3000/auth/github/redirect',
-    clientID : keys.github.clientID,
-    clientSecret: keys.github.clientSecret
+    clientID : process.env.githubClientID,
+    clientSecret: process.env.githubClientSecret
 }, async (accessToken, refreshToken, profile, done) => {
     console.log('authentication worked')
     console.log(profile)
