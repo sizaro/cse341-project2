@@ -24,7 +24,7 @@ auth.loginPage = function (req, res) {
 // Handle logout and render the logout page
 auth.logOutPage = async function (req, res) {
     try {
-        res.render('logout'); // Render logout.ejs
+        res.render('home'); // Render logout.ejs
     } catch (err) {
         res.status(500).json({ error: 'Error rendering logout page' });
     }
