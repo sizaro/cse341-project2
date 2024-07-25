@@ -1,0 +1,49 @@
+// LOCALHOST
+
+###localhost
+GET http://localhost:4000
+
+
+###published link on render.com
+https://web-app-project1.onrender.com/
+
+###Get Math256
+GET http://localhost:4000/math
+
+###Get one student
+GET http://localhost:4000/math/667bdda79f3b7180bd0962ea
+
+###Post request, add an item
+POST http://localhost:4000 HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstname": "sentinel",
+  "lastname": "prime",
+  "birthdate": "01/02/1996",
+  "country": "uganda",
+  "email": "sentinelprime",
+  "photo": "img/jpg",
+  "major": "software development",
+  "password": "hu",
+  "phone": "+25676788776"
+}
+
+###Update an item, put request
+PUT http://localhost:4000/math/6676e2448a616cb90077450e HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstname": "sentinel",
+  "lastname": "prime",
+  "birthdate": "01/02/1996",
+  "country": "uganda",
+  "email": "sentinelprime@test.com",
+  "photo": "img/jpg",
+  "major": "software development",
+  "password": "hush-pswd",
+  "phone": "+25676788776"
+  }
+
+###Delete request
+DELETE http://localhost:4000/math/667be555b8dc61116b24b0e9 HTTP/1.1

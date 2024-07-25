@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #666;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .grocery-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            text-align: left;
+        }
+        .grocery-list li {
+            background: #e2e2e2;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 4px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+        .grocery-list li:nth-child(odd) {
+            background: #f9f9f9;
+        }
+        .grocery-list li::before {
+            content: "🛒";
+            margin-right: 10px;
+        }
+        .logout-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff4b4b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .logout-button:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, <%= user.username %>!</h1>
+        <h2>Your Grocery List</h2>
+        <ul class="grocery-list">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Carrots</li>
+            <li>Tomatoes</li>
+        </ul>
+        <a href="/auth/logout" class="logout-button">Logout</a>
+    </div>
+</body>
+</html>
