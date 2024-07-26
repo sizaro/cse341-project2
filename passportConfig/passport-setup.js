@@ -16,7 +16,7 @@ passport.deserializeUser((user, done) => {
 
 passport.use(
     new GoogleStrategy({
-    callbackURL: 'http://localhost:3000/auth/google/redirect',
+    callbackURL: 'https://web-app.onrender.com/auth/google/redirect',
     clientID : process.env.googleClientID,
     clientSecret: process.env.googleClientSecret,
 }, async (accessToken, refreshToken, profile, done) => {
@@ -49,7 +49,7 @@ passport.use(
 
 passport.use(
     new GithubStrategy({
-    callbackURL: 'http://localhost:3000/auth/github/redirect',
+    callbackURL: 'https://web-app.onrender.com/auth/github/redirect',
     clientID : process.env.githubClientID,
     clientSecret: process.env.githubClientSecret
 }, async (accessToken, refreshToken, profile, done) => {
