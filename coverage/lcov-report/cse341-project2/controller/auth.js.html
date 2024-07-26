@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for cse341-project2/routes/index.js</title>
+    <title>Code coverage report for cse341-project2/controller/auth.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">cse341-project2/routes</a> index.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">cse341-project2/controller</a> auth.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">31.25% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>18/18</span>
+                <span class='fraction'>10/32</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">31.25% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>18/18</span>
+                <span class='fraction'>10/32</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -120,121 +120,175 @@
 <a name='L55'></a><a href='#L55'>55</a>
 <a name='L56'></a><a href='#L56'>56</a>
 <a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">const router = require('express').Router()
-const passport = require('passport');
-const isAuthenticated = require('../middle-ware');
-const controller = require('../controller/project2')
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const passport = require('passport');
 &nbsp;
-const validating = require('../validator')
+const auth = {};
 &nbsp;
-//route to the home page
-router.get('/', controller.getHome);
+// Render the home page
+auth.buildHome = <span class="fstat-no" title="function not covered" >as</span>ync function (req, res) {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+        // #swagger.tags=['we did it']
+<span class="cstat-no" title="statement not covered" >        res.render('home'); </span>// Render home.ejs
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.status(500).json({ error: 'Error building home' });</span>
+    }
+}
 &nbsp;
-router.use('/', require('./swagger'))
+// Render the login page
+auth.loginPage = <span class="fstat-no" title="function not covered" >fu</span>nction (req, res) {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >        res.render('login'); </span>// Render login.ejs
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.status(500).json({ error: 'Error rendering login page' });</span>
+    }
+};
 &nbsp;
+// Handle logout and render the logout page
+auth.logOutPage = <span class="fstat-no" title="function not covered" >as</span>ync function (req, res) {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >        res.render('home'); </span>// Render logout.ejs
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.status(500).json({ error: 'Error rendering logout page' });</span>
+    }
+};
 &nbsp;
+// Handle login with Google
+auth.loginGoogle = <span class="fstat-no" title="function not covered" >as</span>ync function (req, res) {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >        res.redirect('/auth/google'); </span>// Redirect to Google authentication
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.status(500).json({ error: 'Error during Google login' });</span>
+    }
+};
 &nbsp;
-//routes to get math items
+// Authenticate with Google
+auth.authPage = passport.authenticate('google', {
+    scope: ['profile']
+});
 &nbsp;
+// Handle Google callback
+auth.handleGoogleCallback = <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >        if (req.isAuthenticated()) {</span>
+            // Pass the user object to the view
+<span class="cstat-no" title="statement not covered" >            res.render('userpage', { user: req.user }); </span>// Render userpage.ejs and pass user data
+        } else {
+<span class="cstat-no" title="statement not covered" >            res.redirect('/login');</span>
+        }
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.status(500).json({ error: 'Error handling Google callback' });</span>
+    }
+};
 &nbsp;
-//route to get all test collections
-router.get('/math', controller.getAllMath)
+// Handle GitHub callback
+auth.handleGithubCallback = <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >        if (req.isAuthenticated()) {</span>
+            // Pass the user object to the view
+<span class="cstat-no" title="statement not covered" >            res.render('userpage', { user: req.user }); </span>// Render userpage.ejs and pass user data
+        } else {
+<span class="cstat-no" title="statement not covered" >            res.redirect('/login');</span>
+        }
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.status(500).json({ error: 'Error handling GitHub callback' });</span>
+    }
+};
 &nbsp;
-//route to get a single student
-router.get('/math/:id', isAuthenticated.Authenticated, controller.getSingleMath)
-&nbsp;
-//route to create a new student
-router.post('/', isAuthenticated.Authenticated,validating.validationRules(), validating.validate, controller.createItemMath)
-&nbsp;
-//route to update the collection
-router.put('/math/:id',isAuthenticated.Authenticated,  controller.updateItemMath)
-&nbsp;
-//route to delete user
-router.delete('/math/:id', isAuthenticated.Authenticated, controller.deleteItemMath)
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-//routes to get english members.
-&nbsp;
-&nbsp;
-//routes to get math items
-&nbsp;
-&nbsp;
-//route to get all test collections
-router.get('/eng', controller.getAllEng)
-&nbsp;
-//route to get a single student
-router.get('/eng/:id', isAuthenticated.Authenticated, controller.getSingleEng)
-&nbsp;
-//route to create a new student
-router.post('/', isAuthenticated.Authenticated,validating.validationRules(), validating.validate, controller.createItemEng)
-&nbsp;
-//route to update the collection
-router.put('/eng/:id',isAuthenticated.Authenticated,  controller.updateItemEng)
-&nbsp;
-//route to delete user
-router.delete('/eng/:id', isAuthenticated.Authenticated, controller.deleteItemEng)
-&nbsp;
-&nbsp;
-module.exports = router;</pre></td></tr></table></pre>
+module.exports = auth;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

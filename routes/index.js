@@ -8,7 +8,7 @@ const validating = require('../validator')
 //route to the home page
 router.get('/', controller.getHome);
 
-router.use('/', require('./swagger'))
+router.use('/', isAuthenticated.Authenticated, require('./swagger'))
 
 
 
