@@ -1,6 +1,5 @@
 const router = require('express').Router()
 const passport = require('passport');
-const isAuthenticated = require('../middle-ware');
 const controller = require('../controller/project2')
 
 const validating = require('../validator')
@@ -8,7 +7,7 @@ const validating = require('../validator')
 //route to the home page
 router.get('/', controller.getHome);
 
-router.use('/', isAuthenticated.Authenticated, require('./swagger'))
+router.use('/', require('./swagger'))
 
 
 
@@ -19,16 +18,16 @@ router.use('/', isAuthenticated.Authenticated, require('./swagger'))
 router.get('/math', controller.getAllMath)
 
 //route to get a single student
-router.get('/math/:id', isAuthenticated.Authenticated, controller.getSingleMath)
+router.get('/math/:id', controller.getSingleMath)
 
 //route to create a new student
-router.post('/', isAuthenticated.Authenticated,validating.validationRules(), validating.validate, controller.createItemMath)
+router.post('/', validating.validationRules(), validating.validate, controller.createItemMath)
 
 //route to update the collection
-router.put('/math/:id',isAuthenticated.Authenticated,  controller.updateItemMath)
+router.put('/math/:id', controller.updateItemMath)
 
 //route to delete user
-router.delete('/math/:id', isAuthenticated.Authenticated, controller.deleteItemMath)
+router.delete('/math/:id',controller.deleteItemMath)
 
 
 
@@ -43,16 +42,16 @@ router.delete('/math/:id', isAuthenticated.Authenticated, controller.deleteItemM
 router.get('/eng', controller.getAllEng)
 
 //route to get a single student
-router.get('/eng/:id', isAuthenticated.Authenticated, controller.getSingleEng)
+router.get('/eng/:id',controller.getSingleEng)
 
 //route to create a new student
-router.post('/', isAuthenticated.Authenticated,validating.validationRules(), validating.validate, controller.createItemEng)
+router.post('/',validating.validationRules(), validating.validate, controller.createItemEng)
 
 //route to update the collection
-router.put('/eng/:id',isAuthenticated.Authenticated,  controller.updateItemEng)
+router.put('/eng/:id', controller.updateItemEng)
 
 //route to delete user
-router.delete('/eng/:id', isAuthenticated.Authenticated, controller.deleteItemEng)
+router.delete('/eng/:id', controller.deleteItemEng)
 
 
 module.exports = router;

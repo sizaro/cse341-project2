@@ -4,9 +4,9 @@ const { ObjectId } = require('mongodb');
 
 const getInfo = {}
 
-let mathCollection = 'Math256'
+let mathCollection = "Math256"
 
-let engCollection = 'Eng256'
+let engCollection = "Eng256"
 
 getInfo.getHome = async function (req, res) {
     //#swagger.tags=['Users']
@@ -111,18 +111,17 @@ getInfo.updateItemMath = async function (req, res) {
 getInfo.deleteItemMath = async function (req, res) {
          //#swagger.tags=['Users']
     try {
-        const product_id = req.params.id;
-    const userId = ObjectId.createFromHexString(product_id);
-    console.log(userId)
-    const results = await mongoDb.getDb().db().collection(mathCollection).deleteOne({_id:userId});
-    if(results.deletedCount > 0){
-        res.status(204).send();
+        const userId = ObjectId.createFromHexString(req.params.id);
+        console.log(userId)
+        const results = await mongoDb.getDb().db().collection(mathCollection).deleteOne({_id: userId});
+        if(results.deletedCount > 0){
+        res.status(204).send("user succesfully deleted");
        } else{
         res.status(500).json(results.error || 'some error occurred while deleting the user')
        }
     } catch (error) {
         console.log("error is", error)
-        res.status(500).json(results.error || 'some error occurred while deleting the user')
+        res.status(500).json(results.error || 'error occurred while deleting the user')
     }
 }
 
